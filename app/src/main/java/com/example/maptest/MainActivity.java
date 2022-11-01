@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         marker.setMarkerType(MapPOIItem.MarkerType.BluePin); // 기본으로 제공하는 BluePin 마커 모양
         marker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin); // 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양
         mapView.addPOIItem(marker);//마커 사용
-        
+
         mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(latitude, longitude), true); //위치
 
         editSearch = (EditText) findViewById(R.id.editSearch);
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
                 marker.setSelectedMarkerType(MapPOIItem.MarkerType.RedPin); // 마커를 클릭했을때, 기본으로 제공하는 RedPin 마커 모양
                 mapView.addPOIItem(marker);//마커 사용
 
-                 mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(latitude, longitude), true);//위치
+                mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(latitude, longitude), true);//위치
             }
         });
 
@@ -148,15 +148,13 @@ public class MainActivity extends AppCompatActivity {
         }
         // 리스트 데이터가 변경되었으므로 아답터를 갱신하여 검색된 데이터를 화면에 보여준다.
 
-      //  myadapter.notifyDataSetChanged();
+        //  myadapter.notifyDataSetChanged();
     }
 
     // 검색에 사용될 데이터를 리스트에 추가한다.
     private void settingList(){
 
         mDataList = new ArrayList<SampleData>();
-
-      //  list.add("aaa","37.563336407388648","126.97703469594828");
 
         mDataList.add(new SampleData("AAA","37.563336407388648","126.97703469594828"));
         mDataList.add(new SampleData("BBB","37.55226296701367","126.9731451048587"));

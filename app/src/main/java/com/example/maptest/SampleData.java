@@ -2,43 +2,43 @@ package com.example.maptest;
 
 public class SampleData {
 
-        private String name;
+        private String vziname;
         private String latitude;
         private String longitude;
 
-        public SampleData(String name, String latitude, String longitude){
-                this.name = name;
+        public SampleData(String vziname, String latitude, String longitude){
+                this.vziname = vziname;
                 this.latitude = latitude;
                 this.longitude = longitude;
         }
 
 
-        public String getName() {
-                return name;
+        public String getVziname() {
+                return vziname;
         }
 
-        public String setName() {
-                return name;
+        public String setVziname() {
+                return vziname;
         }
 
         public String getLatitude()
         {
-        return this.latitude;
+                return latitude;
         }
 
         public String setLatitude()
         {
-                return this.latitude;
+                return latitude;
         }
 
         public String setLongitude()
         {
-        return this.longitude;
+                return longitude;
         }
 
         public String getLongitude()
         {
-                return this.longitude;
+                return longitude;
         }
 
 

@@ -46,7 +46,7 @@ public class  MyAdapter extends BaseAdapter {
         TextView longitude = (TextView)view.findViewById(R.id.longitude);
         TextView vziname = (TextView)view.findViewById(R.id.vziname);
 
-        vziname.setText(sample.get(position).getName());
+        vziname.setText(sample.get(position).getVziname());
         latitude.setText( sample.get(position).getLatitude());
         longitude.setText(sample.get(position).getLongitude());
 
