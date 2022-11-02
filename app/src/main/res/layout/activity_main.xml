@@ -23,13 +23,13 @@
             android:layout_height="wrap_content"
             android:hint="검색어를 입력하세요."/>
 
-        <ListView
-            android:id="@+id/listView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:divider="#999999"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyceler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="#000000"
             android:dividerHeight="1dp">
-        </ListView>
+        </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
 

@@ -1,10 +1,12 @@
 package com.example.maptest;
 
+import java.util.Collection;
+
 public class SampleData {
 
-        private String vziname;
-        private String latitude;
-        private String longitude;
+         String vziname;
+         String latitude;
+         String longitude;
 
         public SampleData(String vziname, String latitude, String longitude){
                 this.vziname = vziname;
@@ -17,8 +19,8 @@ public class SampleData {
                 return vziname;
         }
 
-        public String setVziname() {
-                return vziname;
+        public String setVziname(String vziname) {
+              return this.vziname = vziname;
         }
 
         public String getLatitude()
@@ -42,5 +44,7 @@ public class SampleData {
         }
 
 
-
+        public Collection<Object> toLowerCase() {
+                return null;
+        }
 }
